@@ -1,16 +1,16 @@
-# package_name
+# brazilian_register
 
-Description. 
-The package package_name is used to:
-	- 
-	-
+Description.
+The package brazilian_register is used to:
+	- Check brazilian Natural Persons Register number (Cadastro de Pessoa Física - CPF).
+	- Check brazilian National Registry of Legal Entities (Cadastro Nacional da Pessoa Jurídica - CNPJ).
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install brazilian_register
 
 ```bash
-pip install package_name
+pip install brazilian_register
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ file1_name.my_function()
 ```
 
 ## Author
-My_name
+Phelipe Mathias
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
