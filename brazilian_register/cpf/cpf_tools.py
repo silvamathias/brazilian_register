@@ -1,4 +1,3 @@
-#input_number = input('Informe o número do doc:')
 class cpf:
     def __init__(self, cpf):
         self.cpf_input = cpf

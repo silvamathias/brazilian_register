@@ -1,4 +1,3 @@
-#input_number = input('Informe o número do doc:')
 import numpy as np
 class cnpj:
     def __init__(self, cnpj):
@@ -29,16 +28,18 @@ class cnpj:
     def _calc_cnpj_out(self):
         #cnpj
         inv_cnpj = self.cnpj_itens[::-1]
+        list_vector = [2,3,4,5,6,7,8,9,2,3,4,5]
 
         while len(inv_cnpj) < 14:
-            itens_sum = 0.0
-            k = 2
-            for i in inv_cnpj:
-                itens_sum += (int(i) * k)
-                k+=1
+            #itens_sum = 0.0
+            mult_vector = np.array(list_vector, np.int32)
 
-            c1 = self._cod_test(itens_sum)
+            mult_cnpj = np.array(list(inv_cnpj), np.int32)
+
+            mult = np.sum(mult_vector * mult_cnpj)
+            c1 = self._cod_test(mult)
             inv_cnpj = str(c1) + str(inv_cnpj)
+            list_vector += [6]
 
         return inv_cnpj[::-1]
 
@@ -65,7 +66,7 @@ class cnpj:
             return False
 
 if __name__ == '__main__':
-    tc = cnpj('06.990.590/0001-23')
+    tc = cnpj('11.222.333/0001-81')
     print(tc.cnpj_status())
     print(tc.cnpj_entrada())
     print(tc.cnpj_retorno())
