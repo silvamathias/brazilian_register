@@ -43,22 +43,6 @@ class cnpj:
 
         return inv_cnpj[::-1]
 
-    def cnpj_entrada(self):
-
-        return self.cnpj
-
-    def cnpj_retorno(self):
-
-        return self.cnpj_output
-
-    def cnpj_verificador_entrada(self):
-
-        return self.cnpj_cod_in
-
-    def cnpj_verificador_retorno(self):
-
-        return self.cnpj_cod_out
-
     def cnpj_status(self):
         if self.cnpj == self.cnpj_output:
             return True
@@ -66,9 +50,9 @@ class cnpj:
             return False
 
 if __name__ == '__main__':
-    tc = cnpj('11.222.333/0001-81')
+    tc = cnpj('11.222.333/0001-33')
     print(tc.cnpj_status())
-    print(tc.cnpj_entrada())
-    print(tc.cnpj_retorno())
-    print(tc.cnpj_verificador_entrada())
-    print(tc.cnpj_verificador_retorno())
+    print(tc.cnpj_input)
+    print(tc.cnpj_output)
+    print(tc.cnpj_cod_in)
+    print(tc.cnpj_cod_out)

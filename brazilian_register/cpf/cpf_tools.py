@@ -39,22 +39,6 @@ class cpf:
 
         return inv_cpf[::-1]
 
-    def cpf_entrada(self):
-
-        return self.cpf
-
-    def cpf_retorno(self):
-
-        return self.cpf_output
-
-    def cpf_verificador_entrada(self):
-
-        return self.cpf_cod_in
-
-    def cpf_verificador_retorno(self):
-
-        return self.cpf_cod_out
-
     def cpf_status(self):
         if self.cpf == self.cpf_output:
             return True
@@ -62,9 +46,9 @@ class cpf:
             return False
 
 if __name__ == '__main__':
-    tc = cpf('111.222.333-96')
+    tc = cpf('111.222.333-34')
     print(tc.cpf_status())
-    print(tc.cpf_entrada())
-    print(tc.cpf_retorno())
-    print(tc.cpf_verificador_entrada())
-    print(tc.cpf_verificador_retorno())
+    print(tc.cpf_input)
+    print(tc.cpf_output)
+    print(tc.cpf_cod_in)
+    print(tc.cpf_cod_out)
