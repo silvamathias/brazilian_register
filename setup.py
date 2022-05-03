@@ -8,7 +8,7 @@ with open("requirements.txt") as f:
 
 setup(
     name="brazilian_register",
-    version="0.0.3",
+    version="0.0.4",
     author="Phelipe Mathias",
     author_email="silvamathias@gmail.com",
     description="Tools to test brazilian register numbers (CPF or CNPJ)",

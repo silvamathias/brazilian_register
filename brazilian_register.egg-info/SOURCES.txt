@@ -1,0 +1,12 @@
+README.md
+setup.py
+brazilian_register/__init__.py
+brazilian_register.egg-info/PKG-INFO
+brazilian_register.egg-info/SOURCES.txt
+brazilian_register.egg-info/dependency_links.txt
+brazilian_register.egg-info/requires.txt
+brazilian_register.egg-info/top_level.txt
+brazilian_register/cnpj/__init__.py
+brazilian_register/cnpj/cnpj_tools.py
+brazilian_register/cpf/__init__.py
+brazilian_register/cpf/cpf_tools.py

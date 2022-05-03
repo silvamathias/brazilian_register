@@ -2,8 +2,9 @@
 
 Description.
 The package brazilian_register is used to:
-	- Check brazilian Natural Persons Register number (Cadastro de Pessoa Física - CPF).
-	- Check brazilian National Registry of Legal Entities (Cadastro Nacional da Pessoa Jurídica - CNPJ).
+
+* Check brazilian Natural Persons Register number (Cadastro de Pessoa Física - CPF).
+* Check brazilian National Registry of Legal Entities (Cadastro Nacional da Pessoa Jurídica - CNPJ).
 
 ## Installation
 
@@ -21,7 +22,7 @@ import brazilian_register as br
 ```
 
 
-### To Check a cpf document number.
+### To Check a **cpf** document number.
 
 ```python
 cpf = br.cpf('cpf number')
@@ -61,7 +62,7 @@ print(cpf.cpf_output)
 print(cpf.cpf_cod_out)
 ```
 
-### To Check a cnpj document number.
+### To Check a **cnpj** document number.
 
 ```python
 cnpj = br.cnpj('cnpj number')
